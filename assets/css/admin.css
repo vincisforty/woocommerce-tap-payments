@@ -1,0 +1,459 @@
+/**
+ * Tap Payment Admin Styles
+ */
+
+/* Admin Settings Page */
+.tap-payment-admin-wrap {
+    max-width: 1200px;
+    margin: 20px 0;
+}
+
+.tap-payment-admin-wrap h1 {
+    margin-bottom: 20px;
+    color: #23282d;
+}
+
+.tap-admin-tabs {
+    border-bottom: 1px solid #ccd0d4;
+    margin-bottom: 20px;
+}
+
+.tap-admin-tabs ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.tap-admin-tabs li {
+    margin: 0;
+    padding: 0;
+}
+
+.tap-admin-tabs a {
+    display: block;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: #555;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.tap-admin-tabs a:hover,
+.tap-admin-tabs a.active {
+    color: #0073aa;
+    border-bottom-color: #0073aa;
+}
+
+.tap-admin-tab-content {
+    display: none;
+}
+
+.tap-admin-tab-content.active {
+    display: block;
+}
+
+/* Form Styling */
+.tap-admin-form {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.tap-form-row {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.tap-form-row label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    min-width: 200px;
+    flex-shrink: 0;
+}
+
+.tap-form-row .tap-form-field {
+    flex: 1;
+}
+
+.tap-form-row input[type="text"],
+.tap-form-row input[type="password"],
+.tap-form-row input[type="url"],
+.tap-form-row select,
+.tap-form-row textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.tap-form-row textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.tap-form-row .description {
+    font-size: 13px;
+    color: #666;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+.tap-form-row .tap-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tap-toggle-switch {
+    position: relative;
+    width: 50px;
+    height: 24px;
+    background: #ccc;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.tap-toggle-switch.active {
+    background: #0073aa;
+}
+
+.tap-toggle-switch::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.tap-toggle-switch.active::after {
+    transform: translateX(26px);
+}
+
+/* API Test Section */
+.tap-api-test {
+    background: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.tap-api-test h4 {
+    margin: 0 0 10px 0;
+    color: #23282d;
+}
+
+.tap-test-button {
+    background: #0073aa;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: background 0.3s ease;
+}
+
+.tap-test-button:hover {
+    background: #005a87;
+}
+
+.tap-test-button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.tap-test-result {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.tap-test-result.success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.tap-test-result.error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Product Fields */
+.tap-product-installment-fields {
+    background: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+.tap-product-installment-fields h4 {
+    margin: 0 0 15px 0;
+    color: #23282d;
+    font-size: 14px;
+}
+
+.tap-installment-field {
+    margin-bottom: 15px;
+}
+
+.tap-installment-field label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+.tap-installment-field input,
+.tap-installment-field select {
+    width: 100%;
+    max-width: 200px;
+    padding: 6px 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+.tap-installment-preview {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.tap-installment-preview h5 {
+    margin: 0 0 8px 0;
+    font-size: 13px;
+    color: #23282d;
+}
+
+.tap-installment-preview ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.tap-installment-preview li {
+    margin-bottom: 3px;
+}
+
+/* Order Meta Box */
+.tap-order-installments {
+    margin: 15px 0;
+}
+
+.tap-order-installments h4 {
+    margin: 0 0 10px 0;
+    color: #23282d;
+}
+
+.tap-installments-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.tap-installments-table th,
+.tap-installments-table td {
+    padding: 8px 12px;
+    text-align: left;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 13px;
+}
+
+.tap-installments-table th {
+    background: #f9f9f9;
+    font-weight: 600;
+    color: #23282d;
+}
+
+.tap-installments-table .tap-status-pending {
+    color: #856404;
+}
+
+.tap-installments-table .tap-status-paid {
+    color: #155724;
+}
+
+.tap-installments-table .tap-status-failed {
+    color: #721c24;
+}
+
+.tap-installments-table .tap-status-overdue {
+    color: #dc3545;
+    font-weight: 600;
+}
+
+/* Status Indicators */
+.tap-status-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.tap-status-badge.tap-status-active {
+    background: #d1ecf1;
+    color: #0c5460;
+}
+
+.tap-status-badge.tap-status-completed {
+    background: #d4edda;
+    color: #155724;
+}
+
+.tap-status-badge.tap-status-pending {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.tap-status-badge.tap-status-paid {
+    background: #d4edda;
+    color: #155724;
+}
+
+.tap-status-badge.tap-status-failed {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.tap-status-badge.tap-status-cancelled {
+    background: #e2e3e5;
+    color: #383d41;
+}
+
+/* Notifications */
+.tap-admin-notice {
+    padding: 12px 15px;
+    margin: 15px 0;
+    border-left: 4px solid;
+    border-radius: 0 4px 4px 0;
+}
+
+.tap-admin-notice.success {
+    background: #d4edda;
+    border-color: #28a745;
+    color: #155724;
+}
+
+.tap-admin-notice.error {
+    background: #f8d7da;
+    border-color: #dc3545;
+    color: #721c24;
+}
+
+.tap-admin-notice.warning {
+    background: #fff3cd;
+    border-color: #ffc107;
+    color: #856404;
+}
+
+.tap-admin-notice.info {
+    background: #d1ecf1;
+    border-color: #17a2b8;
+    color: #0c5460;
+}
+
+/* Loading States */
+.tap-loading {
+    position: relative;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.tap-loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin: -10px 0 0 -10px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #0073aa;
+    border-radius: 50%;
+    animation: tap-spin 1s linear infinite;
+}
+
+@keyframes tap-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .tap-form-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .tap-form-row label {
+        min-width: auto;
+    }
+    
+    .tap-admin-tabs ul {
+        flex-wrap: wrap;
+    }
+    
+    .tap-admin-tabs a {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    
+    .tap-installments-table {
+        font-size: 12px;
+    }
+    
+    .tap-installments-table th,
+    .tap-installments-table td {
+        padding: 6px 8px;
+    }
+}
+
+/* Accessibility */
+.tap-admin-form input:focus,
+.tap-admin-form select:focus,
+.tap-admin-form textarea:focus {
+    outline: 2px solid #0073aa;
+    outline-offset: 2px;
+}
+
+.tap-test-button:focus {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+}
+
+/* Print Styles */
+@media print {
+    .tap-admin-tabs,
+    .tap-test-button,
+    .tap-api-test {
+        display: none;
+    }
+    
+    .tap-admin-form {
+        border: none;
+        box-shadow: none;
+    }
+}
